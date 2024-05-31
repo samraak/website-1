@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+    <div class=" nav-container">
+      <div class="logo">
+      <a href="#">Hotek</a>
+      
+
+    </div>
+    <div class="Menu">
+      
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="Services">Services</a></li>
+      <li><a href="About us">About Us</a></li>
+    </ul>
+    
+  </div>
+</div>
+
+     </nav>
+     <header>
+    <div>
+   <h1>The Luxe Haven</h1>
+    <p>Welcome to The Luxe Haven, a boutique hotel where opulence and serenity converge. Nestled in the heart of the city, our hotel offers a refined retreat for discerning travelers seeking an unforgettable experience. With a focus on exceptional service, gourmet dining, and rejuvenating wellness, we invite you to indulge in the finest comforts and make our hotel your home away from home.</p>
+    </div><div>
+    <img src="pictures/hotel.jpg"  height="200cm";width="200cm">
+  </div>
+  </header>
+    <main>
+        <section id="about">
+            
+            <div>
+                
+               
+               <h3>About us</h3>
+            <p>At The Luxe Haven, we are dedicated to providing an unparalleled hospitality experience. Our story began with a vision to create a sanctuary where guests could escape the hustle and bustle of everyday life and indulge in the finer things. Our team of passionate individuals is committed to delivering exceptional service, crafting unforgettable memories, and exceeding your every expectation.</p>
+            </div><div>
+            <img src="pictures/about us.avif"  height="200cm";width="200cm">
+            <button>Learn more</button>
+            </div>
+        </section>
+        
+         
+        <section id="Services">
+            <div>
+           
+            <h3>Buttler service</h3>
+            <img src="pictures/buttler.jpg" alt="our team" width="200cm" width="200cm">
+            <p>Indugle in the epitome of luxury and personalized attention with our elite buttler service.Our highly trained and experienced buttlers with cater to your every need,providing unparralleled discretion,expertise, and dedication.</p>
+            </div>
+          <div>
+          
+            <h3>Dine in</h3>
+            <img src="pictures/reception.avif" alt="our team" width="200cm" width="200cm">
+            <p>Enjoy a luxurious culinary experience i the comfort of your own home with our exceptional dine-in service.Our team of skilled chefs and attentive serverss will provide a memorable evening of fine dinning,tailored to your tastes and preferences.</p>
+          </div>
+          <div>
+            
+            <h3>Spa</h3>
+            <img src="spa.jpg" alt="our team" width="200cm" width="200cm">
+            <p>Esape to a tranquil oasis of relaxtation and rejuvenation at serenity Spa,here our experty trained therapists and luxurious facilities will transport you to a state of deep clam and well-being.</p>
+          </div>
+
+        </section>
+        <section>
+            <div class="text-center"><h1>Contact us</h1></div>
+            <form id="contact-form"></form>
+            <div id="step1"></div>
+           
+              <label for="fname" required>first name</label>
+              <input id="fname"type="text"name="lname" required/>
+              
+              <label for="email" type="email" name="email" required >Email</label>
+              <input id="email" type="email" name="email" required/>
+              
+              <label for="password" >password</label>
+              <input for="password" type="number" name="password" required/>
+              <button id="Next" onclick="Next('step1')">Next</button>
+  
+              <div id="step2">
+  <h2 class=""section-subtitle>Step-2:Please Enter Education details</h2>
+  <label for="sscMarks">Enter your SSC Marks</label>
+  <input id="sscMarks" type="number" min="0" max="'1050" name="'scsMarks"/>
+  <label for="hscMarks">Enter your HSC Marks</label>
+  <input id="hscMarks" type="number" min="0" max="'1050" name="'hsccMarks"/>
+  <button id="Next" onclick="Next('step2')">Next</button>
+  
+              </div>
+    <div id="'step3">
+                <h2 class=""section-subtitle>Step-3:Submit your form</h2>
+                <p>Please submit your form!!!!!!</p>
+               <input type="submit" value="Submit your application">
+                <button id="Next" onclick="Next('step3')">Next</button>
+              </div>
+            </form>
+          </section>
+    </main>
+  <script>
+    document.getElement("step1").style.display='block';
+    document.getElement("step2").style.display='none';
+    document.getElement("step3").style.display='block';
+    function Next(currentStepId)
+    { console.log(currentStepId)
+        document.getElementById(currentStepId).style.diaplay="none";
+        if(currentStepId=='step1')
+        {
+        document.getElementById("step2").style.diaplay="block";}
+        else{
+            document.getElementById("step3").style.diaplay="block";
+        }
+
+    }
+    
+  </script>
+
+
+</body>
+</html>

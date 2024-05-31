@@ -1,0 +1,92 @@
+header{
+    background-color: bisque;
+    display: flex;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    text-align: center;
+}
+header img{
+    width: 400px;height:auto;
+}
+#about{
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: left;
+    text-align: center;
+
+}
+#Services{
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    align-items: left;
+    text-align: center;
+
+}
+nav{
+    background-color:wheat;
+}
+.nav-container{
+    max-width: 1200px;
+    margin:0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.logo a{
+    color:black;
+    text-decoration: none;
+    font-size: 24px;
+
+}
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.menu ul li{
+    margin-right: 20px;
+}
+.menu ul li:last-child{
+    margin: 0;
+}
+.menu ul li a:hover{
+    color: aqua;
+    font-size:larger ;
+}
+.menu ul li a{
+    text-transform: uppercase;
+    text-decoration
+    : none;
+    color: antiquewhite;
+}
+/* Reset default margin and padding for ul and li */
+.nav-container ul, .nav-container ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Display menu items horizontally */
+.nav-container ul li {
+    display: inline-block;
+}
+
+/* Add space between menu items */
+.nav-container ul li + li {
+    margin-left: 20px; /* Adjust this value as needed */
+}
+
+/* Style links */
+.nav-container ul li a {
+    text-decoration: none;
+    color: black; /* Change color as needed */
+}
+
+/* Optional: Hover effect */
+.nav-container ul li a:hover {
+    color: gray; /* Change color as needed */
+}
